@@ -78,10 +78,8 @@ export default {
         <h4>Segundo Número</h4>
         <input type="number" v-model=segundoNumero>
       </label>
-      <button @click="(e) => {e.preventDefault(); calcular()}">Calcular</button>
     </form>
-    <h3>Resultado: {{ resultado }}</h3>
-    <p>{{ operacao }}</p>
+    <h3>Resultado: {{ calcular() }}</h3>
   </main>
 </template>
 
@@ -116,12 +114,10 @@ main {
   flex-direction: column;
   gap: 2rem;
   background-color: beige;
-  padding: 2rem;
+  padding: 4rem 2rem;
   box-shadow: 10px 10px rgba(0, 0, 0, 0.1);
   border-radius: 15%;
 }
-
-
 
 .formulario {
   display: flex;
